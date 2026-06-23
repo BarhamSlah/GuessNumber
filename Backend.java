@@ -36,6 +36,16 @@ public class GuessNumber {
 
         System.out.println("You can guess the number by " + attempt + " attempt ");
 
+        if(attempt == 1){
+            System.out.println("What a perfect answer 🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇🥇 ");
+        } else if (attempt <= 3 ){
+            System.out.println("You are clever");
+        } else if (attempt <= 6){
+            System.out.println("Well done");
+        } else {
+            System.out.println("Thakns for God , At last");
+        }
+
         scanner.close();
     }
 }
